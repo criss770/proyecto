@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alineación en columna para incluir el título arriba */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alineación superior */
+    gap: 40px; /* Mayor separación entre el formulario y el mapa */
+    margin-top: 20px; /* Espacio debajo del título */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#map {
+    width: 400px; /* Más ancho que el formulario */
+    height: 500px; /* Más alto que antes */
+    background-color: #eaeaea; /* Placeholder mientras carga el mapa */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

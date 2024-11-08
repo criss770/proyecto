@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mi-proyecto/CSS/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registro de Estudiantes</h1>
+    <div class="container">
+        <form id="formularioEstudiante">
+            Cedula:
+            <input type="number" id="cedula" name="cedula" required><br>
+            Nombre:
+            <input type="text" id="nombre" name="nombre" required><br>
+            Apellidos:
+            <input type="text" id="apellidos" name="apellidos" required><br>
+            Direccion:
+            <input type="text" id="direccion" name="direccion" required><br>
+            Ubicacion:
+            <input type="text" id="ubicacion" name="ubicacion" readonly><br>
+            <button type="button" onclick="registrarEstudiante()">Registrar</button>
+        </form>        
+        <div id="map"></div>
+    </div>
+    <script src="./mi-proyecto/js/map.js"></script>
+    <script src="./mi-proyecto/conexion.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=iniciarMap" async defer></script>
+
+</body>
+</html>
